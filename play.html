@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock_Paper_Scissor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissor</h1>
+      <div class="container-score-board">
+        <p>Player</p>
+        <img class="vs" src="images/vs.png" />
+        <p>Computer</p>
+        <p class="player-score">0</p>
+        <p class="computer-score">0</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="palyer-selection-icon">
+        <img class="choice player-choice" src="images/img1.png" />
+        <p class="round-winner">Let the game begin...</p>
+        <img class="choice computer-choice" src="images/img1.png" />
+      </div>
+
+      <div class="modal hidden">
+        <h1>Game Over</h1>
+        <p class="declare-winner">You won (9-0)</p>
+        <button class="close-modal c-btn">Play again!</button>
+      </div>
+
+      <div class="btn-container">
+        <button class="btns rock-button">Rock</button>
+        <button class="btns paper-button">Paper</button>
+        <button class="btns scissor-button">Scissors</button>
+      </div>
+      <div class="counter-container">
+        <p>Rounds Left: <span class="round-counter">10</span></p>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <script src="script1.js"></script>
+  </body>
+</html>
